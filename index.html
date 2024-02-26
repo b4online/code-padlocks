@@ -1,0 +1,40 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Padlocks</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="codes">
+        <div>Monthly OTP:</div>
+        <div id="monthly-otp">*** ***</div>
+        <div>Biweekly OTP:</div>
+        <div id="biweekly-otp">*** ***</div>
+        <div>Weekly OTP:</div>
+        <div id="weekly-otp">*** ***</div>
+        <div>Daily OTP:</div>
+        <div id="daily-otp">*** ***</div>
+        <div>Hourly OTP:</div>
+        <div id="hourly-otp">*** ***</div>
+        <div>30 Minute OTP:</div>
+        <div id="30-minute-otp">*** ***</div>
+        <div>Minute OTP:</div>
+        <div id="minute-otp">*** ***</div>
+    </div>
+    <div class="test">
+        <label for="secret">Secret:</label>
+        <input id="secret" type="text" value="1234 5678 90" />
+        <label for="code">Code:</label>
+        <input id="code" type="text" value="123 456" />
+        <button onclick="testCodes()">Test</button>
+        <div id="test-result"></div>
+    </div>
+</div>
+</body>
+</html>
